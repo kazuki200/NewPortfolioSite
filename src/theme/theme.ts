@@ -4,9 +4,10 @@ const theme = extendTheme({
   styles: {
     global: {
       body: {
+        // width: "100%",
         backgroundColor: "#c3c7cc",
         color: "#FFFFFF",
-        fontFamily: "クレー"
+        fontFamily: "クレー",
       },
     },
   },
