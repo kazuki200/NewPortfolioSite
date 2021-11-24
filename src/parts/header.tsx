@@ -13,32 +13,55 @@ import {
 import { Link } from "react-router-dom";
 
 import { PageRoute } from "../router/route";
+import { css } from "@emotion/react";
 
 export const Header: VFC = memo(() => {
+  const header = css`
+    &:hover {
+      color: red;
+      backgroundcolor: red;
+    }
+  `;
+
   return (
     <>
       <Flex justifyContent="space-around" mt="100px">
-        <Box fontSize={{ base: "10px",sm:"15px", md: "20" }}>
+        <Box
+          _hover={{ opacity: "0.4" }}
+          fontSize={{ base: "10px", sm: "15px", md: "20" }}
+        >
           <Link to="/">
             <FontAwesomeIcon color="black" icon={faHome} size="4x" />
           </Link>
         </Box>
-        <Box fontSize={{ base: "10px",sm:"15px", md: "20" }}>
+        <Box
+          _hover={{ opacity: "0.4" }}
+          fontSize={{ base: "10px", sm: "15px", md: "20" }}
+        >
           <Link to="/profile">
             <FontAwesomeIcon color="black" icon={faIdBadge} size="4x" />
           </Link>
         </Box>
-        <Box fontSize={{ base: "10px",sm:"15px", md: "20" }}>
+        <Box
+          _hover={{ opacity: "0.4" }}
+          fontSize={{ base: "10px", sm: "15px", md: "20" }}
+        >
           <Link to="/skills">
             <FontAwesomeIcon color="black" icon={faToolbox} size="4x" />
           </Link>
         </Box>
-        <Box fontSize={{ base: "10px",sm:"15px", md: "20" }}>
+        <Box
+          _hover={{ opacity: "0.4" }}
+          fontSize={{ base: "10px", sm: "15px", md: "20" }}
+        >
           <Link to="/portfolio">
             <FontAwesomeIcon color="black" icon={faBriefcase} size="4x" />
           </Link>
         </Box>
-        <Box fontSize={{ base: "10px",sm:"15px", md: "20" }}>
+        <Box
+          _hover={{ opacity: "0.4" }}
+          fontSize={{ base: "10px", sm: "15px", md: "20" }}
+        >
           <Link to="/form">
             <FontAwesomeIcon color="black" icon={faPhone} size="4x" />
           </Link>
